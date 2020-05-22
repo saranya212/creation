@@ -102,17 +102,13 @@
     </div>
 </section> 
 
-<!--<section style="height: 0px;" class="bg-primary">
-  <div class="container">
-    <div class="row"></div>
-  </div>
-</section>-->
+
 
 <section class ="p-5 bg-secondary"id="fami">
   <div class="container" >
     <h1 class="text-center text-white pt-4">Family</h1>
        <div class="row pt-3">  
-           <div  class="col-md-4">
+           <div  class="col-md-4 first">
                <div class="card">
                  <img class="card-img-top" src="images/newsiv.jpg"  alt="Card image">
                 </div>
@@ -162,53 +158,43 @@
         <section class="p-5"id="folo" style="background-color: #003752;;">
              <div class="container text-white">
                
-              <h1 class="pt-4 text text-center" style="padding-right: 10px;">ContactME</h1>
-               
-                   <div class="row pt-3">
-                    
-                    <div class="col-12">
-                      <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                          <div class="row pt-3">
-                              <div class="col-md-6">
-                                  <div class="md-form mb-0">
-                                      <input type="text" id="name" name="name" class="form-control">
-                                      <label for="name" class="">Your name</label>
-                                  </div>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="md-form mb-0">
-                                      <input type="text" id="email" name="email" class="form-control">
-                                      <label for="email" class="">Your email</label>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row pt-3">
-                              <div class="col-md-12">
-                                  <div class="md-form mb-0">
-                                      <input type="text" id="subject" name="subject" class="form-control">
-                                      <label for="subject" class="">Subject</label>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="row pt-3">
-                              <div class="col-md-12">
-          
-                                  <div class="md-form">
-                                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                      <label for="message">Your message</label>
-                                  </div>
-          
-                              </div>
-                          </div>
-                        
-                      </form>
-          
-                      <div class="text-center">
-                          <a class="btn btn-default btn-justified" style="background-color: black; color: white;" onclick="document.getElementById('contact-form').submit();">Send</a>
-                      </div>
-                      <div class="status"></div>
+              <div class="row pt-5">
+                <div class="col-md-3" style="
+                
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;">
+                  <div class="contact-info">
+                    <img class="pl-3"src="https://image.ibb.co/kUASdV/contact-image.png" alt="image">
+                   
+                    <h4 class="pl-3">I would love to hear from you !</h4>
                   </div>
-          </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="contact-form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="fname">Your Name:</label>
+                      <div class="col-sm-10">          
+                      <input type="text" class="form-control" id="name" placeholder="Enter Name" name="fname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email">Email:</label>
+                      <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="comment">Comment:</label>
+                      <div class="col-sm-10">
+                      <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">        
+                      <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                      </div>
+                    </div>
+                  </div>
   
   </div>
 </section>
@@ -234,6 +220,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></script>
     
     <script src="loca.js"></script> 
+    
   </body>
 
 </html>
